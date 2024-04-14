@@ -1,0 +1,25 @@
+<!--
+title: Interactables
+description: 
+published: true
+date: 2024-04-14T17:28:14.886Z
+tags: cck, content creation
+editor: ckeditor
+dateCreated: 2023-07-16T18:15:45.693Z
+-->
+
+<h1><span class="text-huge"><strong><u>ChilloutVR Interactable</u></strong></span></h1>
+<h2>What are interactables and how do they work in ChilloutVR?</h2>
+<p>Interactables are objects that can be manipulated by the player using their VR controllers or mouse and keyboard. They can have different behaviors and effects depending on how they are configured by the world creator. For example, an interactable door can be opened and closed by grabbing and pulling it, an interactable button can activate a sound or a light when pressed, an interactable lever can change the state of another object when flipped, etc.</p>
+<p>&nbsp;</p>
+<p>Interactables are created using the CCK, which is a set of tools and scripts that allow world creators to customize their worlds using Unity. The CCK provides a variety of components that can be attached to any game object to make it an interactable. These components define the properties and functions of the interactable, such as its appearance, physics, sound, animation, interaction mode, etc.</p>
+<p>&nbsp;</p>
+<p>How do interactables work in ChilloutVR? When a player approaches an interactable object, they will see a highlight around it and a tooltip. The player can then grab or touch the object using their VR controller or mouse cursor, depending on the interaction mode of the object. The object will respond accordingly to the player's input, such as moving, rotating, scaling, changing color, playing sound, etc. The object will also send events to other scripts or objects in the scene when certain conditions are met, such as when it is grabbed, released, pressed, etc. These events can be used to trigger actions or effects in the world, such as opening a door, turning on a light, playing a video, etc.</p>
+<p>&nbsp;</p>
+<h2>What are the main components of an interactable and what do they do?</h2>
+<p>An interactable object in ChilloutVR consists of the Interactable component that define its behavior.</p>
+<p>&nbsp;</p>
+<h2>How to use the OnInteractDown/Up event to trigger actions when an interactable is released by the player?</h2>
+<p>One of the most common uses of interactables in ChilloutVR is to trigger actions or effects in the world when the player Interacts with the object by Clicking it. For example,</p>
+<p>an interactable button can activate a sound or a light when the player Clicks it.</p>
+<p>To achieve this, we can use the OnInteractDown/Up event that is sent by the Interactable component when the object is clicked. This event can than be assigned to functions or methods.</p>

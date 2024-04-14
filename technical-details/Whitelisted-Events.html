@@ -1,0 +1,862 @@
+<!--
+title: Whitelisted Events
+description: 
+published: true
+date: 2024-04-14T17:28:06.925Z
+tags: cck, content creation
+editor: ckeditor
+dateCreated: 2024-04-14T16:50:03.137Z
+-->
+
+<h2>## GameObject</h2>
+<p>- SetActive</p>
+<p>&nbsp;</p>
+<h2>## Transform</h2>
+<p>- LookAt</p>
+<p>- SetAsFirstSibling</p>
+<p>- SetAsLastSibling</p>
+<p>- SetSiblingIndex</p>
+<p>&nbsp;</p>
+<h2>## Animator</h2>
+<p>- Play</p>
+<p>- PlayInFixedTime</p>
+<p>- ResetTrigger</p>
+<p>- SetTrigger</p>
+<p>- StartPlayback</p>
+<p>- StopPlayback</p>
+<p>- Update</p>
+<p>- WriteDefaultValues</p>
+<p>- set_applyRootMotion</p>
+<p>- set_enabled</p>
+<p>- set_feetPivotActive</p>
+<p>- set_playbackTime</p>
+<p>- set_speed</p>
+<p>- set_stabilizeFeet</p>
+<p>&nbsp;</p>
+<h2>## LookAtIK</h2>
+<p>- Disable</p>
+<p>- UpdateSolverExternal</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## VRIK</h2>
+<p>- AutoDetectReferences</p>
+<p>- Disable</p>
+<p>- GuessHandOrientations</p>
+<p>- UpdateSolverExternal</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## TwistRelaxer</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## ParticleSystem</h2>
+<p>- Clear</p>
+<p>- Emit</p>
+<p>- Pause</p>
+<p>- Play</p>
+<p>- Simulate</p>
+<p>- Stop</p>
+<p>- TriggerSubEmitter</p>
+<p>- set_time</p>
+<p>- set_useAutoRandomSeed</p>
+<p>&nbsp;</p>
+<h2>## ParticleSystemRenderer</h2>
+<p>- set_allowOcclusionWhenDynamic</p>
+<p>- set_allowRoll</p>
+<p>- set_cameraVelocityScale</p>
+<p>- set_enabled</p>
+<p>- set_lengthScale</p>
+<p>- set_material</p>
+<p>- set_maxParticleSize</p>
+<p>- set_mesh</p>
+<p>- set_minParticleSize</p>
+<p>- set_normalDirection</p>
+<p>- set_probeAnchor</p>
+<p>- set_receiveShadows</p>
+<p>- set_rendererPriority</p>
+<p>- set_shadowBias</p>
+<p>- set_sharedMaterial</p>
+<p>- set_velocityScale</p>
+<p>&nbsp;</p>
+<h2>## ParticleSystemForceField</h2>
+<p>- set_endRange</p>
+<p>- set_gravityFocus</p>
+<p>- set_length</p>
+<p>- set_multiplyDragByParticleSize</p>
+<p>- set_multiplyDragByParticleVelocity</p>
+<p>- set_startRange</p>
+<p>- set_vectorField</p>
+<p>&nbsp;</p>
+<h2>## SkinnedMeshRenderer</h2>
+<p>- set_allowOcclusionWhenDynamic</p>
+<p>- set_enabled</p>
+<p>- set_lightProbeProxyVolumeOverride</p>
+<p>- set_probeAnchor</p>
+<p>- set_receiveShadows</p>
+<p>- set_rendererPriority</p>
+<p>- set_rootBone</p>
+<p>- set_sharedMaterial</p>
+<p>- set_sharedMesh</p>
+<p>- set_skinnedMotionVectors</p>
+<p>- set_updateWhenOffscreen</p>
+<p>&nbsp;</p>
+<h2>## MeshRenderer</h2>
+<p>- set_allowOcclusionWhenDynamic</p>
+<p>- set_enabled</p>
+<p>- set_lightProbeProxyVolumeOverride</p>
+<p>- set_material</p>
+<p>- set_probeAnchor</p>
+<p>- set_receiveShadows</p>
+<p>- set_rendererPriority</p>
+<p>- set_sharedMaterial</p>
+<p>&nbsp;</p>
+<h2>## LineRenderer</h2>
+<p>- Simplify</p>
+<p>- set_enabled</p>
+<p>- set_endWidth</p>
+<p>- set_loop</p>
+<p>- set_material</p>
+<p>- set_probeAnchor</p>
+<p>- set_receiveShadows</p>
+<p>- set_sharedMaterial</p>
+<p>- set_startWidth</p>
+<p>- set_useWorldSpace</p>
+<p>- set_widthMultiplier</p>
+<p>&nbsp;</p>
+<h2>## TrailRenderer</h2>
+<p>- Clear</p>
+<p>- set_allowOcclusionWhenDynamic</p>
+<p>- set_autodestruct</p>
+<p>- set_emitting</p>
+<p>- set_enabled</p>
+<p>- set_endWidth</p>
+<p>- set_material</p>
+<p>- set_minVertexDistance</p>
+<p>- set_probeAnchor</p>
+<p>- set_receiveShadows</p>
+<p>- set_sharedMaterial</p>
+<p>- set_startWidth</p>
+<p>- set_time</p>
+<p>- set_widthMultiplier</p>
+<p>&nbsp;</p>
+<h2>## BoxCollider</h2>
+<p>- set_enabled</p>
+<p>- set_isTrigger</p>
+<p>- set_material</p>
+<p>- set_sharedMaterial</p>
+<p>&nbsp;</p>
+<h2>## SphereCollider</h2>
+<p>- set_enabled</p>
+<p>- set_isTrigger</p>
+<p>- set_material</p>
+<p>- set_radius</p>
+<p>- set_sharedMaterial</p>
+<p>&nbsp;</p>
+<h2>## CapsuleCollider</h2>
+<p>- set_direction</p>
+<p>- set_enabled</p>
+<p>- set_height</p>
+<p>- set_isTrigger</p>
+<p>- set_material</p>
+<p>- set_radius</p>
+<p>- set_sharedMaterial</p>
+<p>&nbsp;</p>
+<h2>## MeshCollider</h2>
+<p>- set_enabled</p>
+<p>- set_isTrigger</p>
+<p>- set_material</p>
+<p>- set_sharedMaterial</p>
+<p>&nbsp;</p>
+<h2>## WheelCollider</h2>
+<p>- ResetSprungMasses</p>
+<p>- set_brakeTorque</p>
+<p>- set_enabled</p>
+<p>- set_forceAppPointDistance</p>
+<p>- set_isTrigger</p>
+<p>- set_mass</p>
+<p>- set_material</p>
+<p>- set_motorTorque</p>
+<p>- set_radius</p>
+<p>- set_sharedMaterial</p>
+<p>- set_sprungMass</p>
+<p>- set_steerAngle</p>
+<p>- set_suspensionDistance</p>
+<p>- set_wheelDampingRate</p>
+<p>&nbsp;</p>
+<h2>## CCDIK</h2>
+<p>- Disable</p>
+<p>- UpdateSolverExternal</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## Rigidbody</h2>
+<p>- ResetCenterOfMass</p>
+<p>- ResetInertiaTensor</p>
+<p>- SetDensity</p>
+<p>- Sleep</p>
+<p>- WakeUp</p>
+<p>- set_angularDrag</p>
+<p>- set_detectCollisions</p>
+<p>- set_drag</p>
+<p>- set_freezeRotation</p>
+<p>- set_isKinematic</p>
+<p>- set_mass</p>
+<p>- set_maxAngularVelocity</p>
+<p>- set_maxDepenetrationVelocity</p>
+<p>- set_sleepThreshold</p>
+<p>- set_solverIterations</p>
+<p>- set_solverVelocityIterations</p>
+<p>- set_useGravity</p>
+<p>&nbsp;</p>
+<h2>## FixedJoint</h2>
+<p>- set_autoConfigureConnectedAnchor</p>
+<p>- set_breakForce</p>
+<p>- set_breakTorque</p>
+<p>- set_connectedAnchor</p>
+<p>- set_connectedBody</p>
+<p>- set_connectedMassScale</p>
+<p>- set_enableCollision</p>
+<p>- set_enablePreprocessing</p>
+<p>- set_massScale</p>
+<p>&nbsp;</p>
+<h2>## HingeJoint</h2>
+<p>- set_autoConfigureConnectedAnchor</p>
+<p>- set_breakForce</p>
+<p>- set_breakTorque</p>
+<p>- set_connectedBody</p>
+<p>- set_connectedMassScale</p>
+<p>- set_enableCollision</p>
+<p>- set_enablePreprocessing</p>
+<p>- set_massScale</p>
+<p>- set_useLimits</p>
+<p>- set_useMotor</p>
+<p>- set_useSpring</p>
+<p>&nbsp;</p>
+<h2>## SpringJoint</h2>
+<p>- set_autoConfigureConnectedAnchor</p>
+<p>- set_breakForce</p>
+<p>- set_breakTorque</p>
+<p>- set_connectedBody</p>
+<p>- set_connectedMassScale</p>
+<p>- set_damper</p>
+<p>- set_enableCollision</p>
+<p>- set_enablePreprocessing</p>
+<p>- set_massScale</p>
+<p>- set_maxDistance</p>
+<p>- set_minDistance</p>
+<p>- set_spring</p>
+<p>- set_tolerance</p>
+<p>&nbsp;</p>
+<h2>## MeshFilter</h2>
+<p>- set_mesh</p>
+<p>- set_sharedMesh</p>
+<p>&nbsp;</p>
+<h2>## AimConstraint</h2>
+<p>- RemoveSource</p>
+<p>- set_constraintActive</p>
+<p>- set_enabled</p>
+<p>- set_locked</p>
+<p>- set_weight</p>
+<p>- set_worldUpObject</p>
+<p>&nbsp;</p>
+<h2>## ParentConstraint</h2>
+<p>- RemoveSource</p>
+<p>- set_constraintActive</p>
+<p>- set_enabled</p>
+<p>- set_locked</p>
+<p>- set_weight</p>
+<p>&nbsp;</p>
+<h2>## PositionConstraint</h2>
+<p>- RemoveSource</p>
+<p>- set_constraintActive</p>
+<p>- set_enabled</p>
+<p>- set_locked</p>
+<p>- set_weight</p>
+<p>&nbsp;</p>
+<h2>## RotationConstraint</h2>
+<p>- RemoveSource</p>
+<p>- set_constraintActive</p>
+<p>- set_enabled</p>
+<p>- set_locked</p>
+<p>- set_weight</p>
+<p>&nbsp;</p>
+<h2>## ScaleConstraint</h2>
+<p>- RemoveSource</p>
+<p>- set_constraintActive</p>
+<p>- set_enabled</p>
+<p>- set_locked</p>
+<p>- set_weight</p>
+<p>&nbsp;</p>
+<h2>## LookAtConstraint</h2>
+<p>- RemoveSource</p>
+<p>- set_constraintActive</p>
+<p>- set_enabled</p>
+<p>- set_locked</p>
+<p>- set_roll</p>
+<p>- set_useUpObject</p>
+<p>- set_weight</p>
+<p>- set_worldUpObject</p>
+<p>&nbsp;</p>
+<h2>## Cloth</h2>
+<p>- ClearTransformMotion</p>
+<p>- SetEnabledFading</p>
+<p>- set_bendingStiffness</p>
+<p>- set_collisionMassScale</p>
+<p>- set_damping</p>
+<p>- set_enableContinuousCollision</p>
+<p>- set_enabled</p>
+<p>- set_friction</p>
+<p>- set_selfCollisionDistance</p>
+<p>- set_selfCollisionStiffness</p>
+<p>- set_sleepThreshold</p>
+<p>- set_stiffnessFrequency</p>
+<p>- set_useGravity</p>
+<p>- set_useTethers</p>
+<p>- set_useVirtualParticles</p>
+<p>- set_worldAccelerationScale</p>
+<p>- set_worldVelocityScale</p>
+<p>&nbsp;</p>
+<h2>## LightProbeProxyVolume</h2>
+<p>&nbsp;</p>
+<h2>## LimbIK</h2>
+<p>- Disable</p>
+<p>- UpdateSolverExternal</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## BipedIK</h2>
+<p>- Disable</p>
+<p>- InitiateBipedIK</p>
+<p>- SetSpineWeight</p>
+<p>- SetToDefaults</p>
+<p>- UpdateBipedIK</p>
+<p>- UpdateSolverExternal</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## GrounderIK</h2>
+<p>- ResetPosition</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## ConfigurableJoint</h2>
+<p>- set_autoConfigureConnectedAnchor</p>
+<p>- set_breakForce</p>
+<p>- set_breakTorque</p>
+<p>- set_configuredInWorldSpace</p>
+<p>- set_connectedBody</p>
+<p>- set_connectedMassScale</p>
+<p>- set_enableCollision</p>
+<p>- set_enablePreprocessing</p>
+<p>- set_massScale</p>
+<p>- set_projectionAngle</p>
+<p>- set_projectionDistance</p>
+<p>- set_swapBodies</p>
+<p>&nbsp;</p>
+<h2>## FullBodyBipedIK</h2>
+<p>- Disable</p>
+<p>- UpdateSolverExternal</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## GrounderBipedIK</h2>
+<p>- ResetPosition</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## RotationLimitAngle</h2>
+<p>- Disable</p>
+<p>- SetDefaultLocalRotation</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## RotationLimitHinge</h2>
+<p>- Disable</p>
+<p>- SetDefaultLocalRotation</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## RotationLimitPolygonal</h2>
+<p>- Disable</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## RotationLimitSpline</h2>
+<p>- Disable</p>
+<p>- SetDefaultLocalRotation</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## FABRIK</h2>
+<p>- Disable</p>
+<p>- UpdateSolverExternal</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## FABRIKRoot</h2>
+<p>- Disable</p>
+<p>- UpdateSolverExternal</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CharacterJoint</h2>
+<p>- set_autoConfigureConnectedAnchor</p>
+<p>- set_breakForce</p>
+<p>- set_breakTorque</p>
+<p>- set_connectedBody</p>
+<p>- set_connectedMassScale</p>
+<p>- set_enableCollision</p>
+<p>- set_enablePreprocessing</p>
+<p>- set_enableProjection</p>
+<p>- set_massScale</p>
+<p>- set_projectionAngle</p>
+<p>- set_projectionDistance</p>
+<p>&nbsp;</p>
+<h2>## CVRFaceTracking</h2>
+<p>&nbsp;</p>
+<h2>## CVRMaterialDriver</h2>
+<p>&nbsp;</p>
+<h2>## CVRMovementParent</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRAdvancedAvatarSettingsTriggerHelper</h2>
+<p>- onEnter</p>
+<p>- onExit</p>
+<p>- onStay</p>
+<p>&nbsp;</p>
+<h2>## CVRCameraHelper</h2>
+<p>- TakeScreenshot</p>
+<p>&nbsp;</p>
+<h2>## CVRAnimatorDriver</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRMaterialUpdater</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRParticleSound</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRAudioDriver</h2>
+<p>- PlayNext</p>
+<p>- PlayPrev</p>
+<p>- PlaySound</p>
+<p>- SelectRandomSound</p>
+<p>- SetAudioClip</p>
+<p>&nbsp;</p>
+<h2>## ConstantForce</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRDistanceConstrain</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRHapticAreaChest</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRToggleStatePointer</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRToggleStateTrigger</h2>
+<p>- Trigger</p>
+<p>&nbsp;</p>
+<h2>## CVRAdvancedAvatarSettingsPointer</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRAdvancedAvatarSettingsTrigger</h2>
+<p>- EnterTrigger</p>
+<p>- ExecuteTrigger</p>
+<p>- ExitTrigger</p>
+<p>- StayTrigger</p>
+<p>- Trigger</p>
+<p>- TriggerDelayed</p>
+<p>&nbsp;</p>
+<h2>## CVRPointer</h2>
+<p>&nbsp;</p>
+<h2>## CVRParameterStream</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRSpawnable</h2>
+<p>- EnterTrigger</p>
+<p>- ExitTrigger</p>
+<p>- StayTrigger</p>
+<p>- Trigger</p>
+<p>&nbsp;</p>
+<h2>## CVRPickupObject</h2>
+<p>- Drop</p>
+<p>- ResetFlungStatus</p>
+<p>- ResetLocation</p>
+<p>- SetWasUsingGravity</p>
+<p>&nbsp;</p>
+<h2>## CVRTimelineSync</h2>
+<p>&nbsp;</p>
+<h2>## CVRAttachment</h2>
+<p>- Attach</p>
+<p>- DeAttach</p>
+<p>&nbsp;</p>
+<h2>## CVRSpawnableTrigger</h2>
+<p>- EnterTrigger</p>
+<p>- ExitTrigger</p>
+<p>- StayTrigger</p>
+<p>- Trigger</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## RCC_CarControllerV3</h2>
+<p>- CheckGrounded</p>
+<p>- CreateWheelColliders</p>
+<p>- DetachTrailer</p>
+<p>- GearShiftDown</p>
+<p>- GearShiftTo</p>
+<p>- GearShiftUp</p>
+<p>- InitGears</p>
+<p>- KillEngine</p>
+<p>- KillOrStartEngine</p>
+<p>- PreviewSmokeParticle</p>
+<p>- Repair</p>
+<p>- SetBehavior</p>
+<p>- SetCanControl</p>
+<p>- SetExternalControl</p>
+<p>- StartEngine</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## RCC_WheelCollider</h2>
+<p>- ApplyBrakeTorque</p>
+<p>- ApplyMotorTorque</p>
+<p>- CreateWheelColliders</p>
+<p>- SetBehavior</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## RCC_DashboardObjects</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## UnityEngine.UI.Image</h2>
+<p>- CalculateLayoutInputHorizontal</p>
+<p>- CalculateLayoutInputVertical</p>
+<p>- DisableSpriteOptimizations</p>
+<p>- RecalculateClipping</p>
+<p>- RecalculateMasking</p>
+<p>- SetAllDirty</p>
+<p>- SetLayoutDirty</p>
+<p>- SetMaterialDirty</p>
+<p>- SetNativeSize</p>
+<p>- SetVerticesDirty</p>
+<p>- set_alphaHitTestMinimumThreshold</p>
+<p>- set_enabled</p>
+<p>- set_fillAmount</p>
+<p>- set_fillCenter</p>
+<p>- set_fillClockwise</p>
+<p>- set_fillOrigin</p>
+<p>- set_isMaskingGraphic</p>
+<p>- set_maskable</p>
+<p>- set_material</p>
+<p>- set_overrideSprite</p>
+<p>- set_pixelsPerUnitMultiplier</p>
+<p>- set_preserveAspect</p>
+<p>- set_raycastTarget</p>
+<p>- set_sprite</p>
+<p>- set_useSpriteMesh</p>
+<p>&nbsp;</p>
+<h2>## Canvas</h2>
+<p>- set_enabled</p>
+<p>- set_normalizedSortingGridSize</p>
+<p>- set_overridePixelPerfect</p>
+<p>- set_overrideSorting</p>
+<p>- set_pixelPerfect</p>
+<p>- set_planeDistance</p>
+<p>- set_referencePixelsPerUnit</p>
+<p>- set_scaleFactor</p>
+<p>&nbsp;</p>
+<h2>## Text</h2>
+<p>- CalculateLayoutInputHorizontal</p>
+<p>- CalculateLayoutInputVertical</p>
+<p>- RecalculateClipping</p>
+<p>- RecalculateMasking</p>
+<p>- SetAllDirty</p>
+<p>- SetLayoutDirty</p>
+<p>- SetMaterialDirty</p>
+<p>- SetNativeSize</p>
+<p>- SetVerticesDirty</p>
+<p>- set_alignByGeometry</p>
+<p>- set_enabled</p>
+<p>- set_font</p>
+<p>- set_fontSize</p>
+<p>- set_isMaskingGraphic</p>
+<p>- set_lineSpacing</p>
+<p>- set_maskable</p>
+<p>- set_material</p>
+<p>- set_raycastTarget</p>
+<p>- set_resizeTextForBestFit</p>
+<p>- set_resizeTextMaxSize</p>
+<p>- set_resizeTextMinSize</p>
+<p>- set_supportRichText</p>
+<p>- set_text</p>
+<p>&nbsp;</p>
+<h2>## RawImage</h2>
+<p>- RecalculateClipping</p>
+<p>- RecalculateMasking</p>
+<p>- SetAllDirty</p>
+<p>- SetMaterialDirty</p>
+<p>- SetNativeSize</p>
+<p>- SetVerticesDirty</p>
+<p>- set_enabled</p>
+<p>- set_isMaskingGraphic</p>
+<p>- set_maskable</p>
+<p>- set_material</p>
+<p>- set_raycastTarget</p>
+<p>- set_texture</p>
+<p>&nbsp;</p>
+<h2>## UnityEngine.UI.Toggle</h2>
+<p>- SetIsOnWithoutNotify</p>
+<p>- set_enabled</p>
+<p>- set_group</p>
+<p>- set_image</p>
+<p>- set_interactable</p>
+<p>- set_isOn</p>
+<p>- set_targetGraphic</p>
+<p>&nbsp;</p>
+<h2>## Dropdown</h2>
+<p>- Hide</p>
+<p>- RefreshShownValue</p>
+<p>- SetValueWithoutNotify</p>
+<p>- Show</p>
+<p>- set_alphaFadeSpeed</p>
+<p>- set_captionImage</p>
+<p>- set_captionText</p>
+<p>- set_enabled</p>
+<p>- set_image</p>
+<p>- set_interactable</p>
+<p>- set_itemImage</p>
+<p>- set_itemText</p>
+<p>- set_targetGraphic</p>
+<p>- set_value</p>
+<p>&nbsp;</p>
+<h2>## UnityEngine.UI.Button</h2>
+<p>- set_enabled</p>
+<p>- set_image</p>
+<p>- set_interactable</p>
+<p>- set_targetGraphic</p>
+<p>&nbsp;</p>
+<h2>## RCC_UIDashboardObjects</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## RectTransform</h2>
+<p>- LookAt</p>
+<p>- SetAsFirstSibling</p>
+<p>- SetAsLastSibling</p>
+<p>- SetSiblingIndex</p>
+<p>- set_parent</p>
+<p>&nbsp;</p>
+<h2>## ContentSizeFitter</h2>
+<p>- SetLayoutHorizontal</p>
+<p>- SetLayoutVertical</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## ScrollView</h2>
+<p>&nbsp;</p>
+<h2>## VerticalLayoutGroup</h2>
+<p>- CalculateLayoutInputHorizontal</p>
+<p>- CalculateLayoutInputVertical</p>
+<p>- SetLayoutHorizontal</p>
+<p>- SetLayoutVertical</p>
+<p>- set_childControlHeight</p>
+<p>- set_childControlWidth</p>
+<p>- set_childForceExpandHeight</p>
+<p>- set_childForceExpandWidth</p>
+<p>- set_childScaleHeight</p>
+<p>- set_childScaleWidth</p>
+<p>- set_enabled</p>
+<p>- set_spacing</p>
+<p>&nbsp;</p>
+<h2>## HorizontalLayoutGroup</h2>
+<p>- CalculateLayoutInputHorizontal</p>
+<p>- CalculateLayoutInputVertical</p>
+<p>- SetLayoutHorizontal</p>
+<p>- SetLayoutVertical</p>
+<p>- set_childControlHeight</p>
+<p>- set_childControlWidth</p>
+<p>- set_childForceExpandHeight</p>
+<p>- set_childForceExpandWidth</p>
+<p>- set_childScaleHeight</p>
+<p>- set_childScaleWidth</p>
+<p>- set_enabled</p>
+<p>- set_spacing</p>
+<p>&nbsp;</p>
+<h2>## CanvasRenderer</h2>
+<p>&nbsp;</p>
+<h2>## RCC_DashboardInputs</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## NewtonCarController</h2>
+<p>- CreateEngineCurve</p>
+<p>- CreateWheelColliders</p>
+<p>- InitGears</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## NewtonCarControllerWheel</h2>
+<p>&nbsp;</p>
+<h2>## NewtonCarControllerLight</h2>
+<p>&nbsp;</p>
+<h2>## CVRSnappingPoint</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRGlobalMaterialPropertyUpdater</h2>
+<p>&nbsp;</p>
+<h2>## NavMeshAgent</h2>
+<p>- ResetPath</p>
+<p>- set_acceleration</p>
+<p>- set_agentTypeID</p>
+<p>- set_angularSpeed</p>
+<p>- set_areaMask</p>
+<p>- set_autoBraking</p>
+<p>- set_autoRepath</p>
+<p>- set_avoidancePriority</p>
+<p>- set_baseOffset</p>
+<p>- set_enabled</p>
+<p>- set_height</p>
+<p>- set_isStopped</p>
+<p>- set_radius</p>
+<p>- set_speed</p>
+<p>- set_stoppingDistance</p>
+<p>- set_updatePosition</p>
+<p>- set_updateRotation</p>
+<p>- set_updateUpAxis</p>
+<p>&nbsp;</p>
+<h2>## CVRNavController</h2>
+<p>&nbsp;</p>
+<h2>## RCC_Light</h2>
+<p>- CreateWheelColliders</p>
+<p>- Initialize</p>
+<p>- OnCollision</p>
+<p>- OnRepair</p>
+<p>- SetBehavior</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## RCC_Exhaust</h2>
+<p>- CreateWheelColliders</p>
+<p>- SetBehavior</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## RCC_TruckTrailer</h2>
+<p>- AttachTrailer</p>
+<p>- DetachTrailer</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## RCC_TrailerAttachPoint</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## RCC_SuspensionArm</h2>
+<p>&nbsp;</p>
+<h2>## PlayerMaterialParser</h2>
+<p>&nbsp;</p>
+<h2>## DynamicBone</h2>
+<p>&nbsp;</p>
+<h2>## MagicaBoneCloth</h2>
+<p>&nbsp;</p>
+<h2>## MagicaRenderDeformer</h2>
+<p>&nbsp;</p>
+<h2>## MagicaVirtualDeformer</h2>
+<p>&nbsp;</p>
+<h2>## DynamicBoneCollider</h2>
+<p>&nbsp;</p>
+<h2>## DynamicBoneColliderBase</h2>
+<p>&nbsp;</p>
+<h2>## DynamicBonePlaneCollider</h2>
+<p>&nbsp;</p>
+<h2>## MagicaCloth.MagicaCapsuleCollider</h2>
+<p>&nbsp;</p>
+<h2>## MagicaCloth.MagicaPlaneCollider</h2>
+<p>&nbsp;</p>
+<h2>## MagicaCloth.MagicaSphereCollider</h2>
+<p>&nbsp;</p>
+<h2>## MagicaCloth.ColliderComponent</h2>
+<p>&nbsp;</p>
+<h2>## CVRInteractable</h2>
+<p>- CustomTrigger</p>
+<p>&nbsp;</p>
+<h2>## CVRVariableBuffer</h2>
+<p>- SetValue</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CombatSystem</h2>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## GameInstanceController</h2>
+<p>- EnemyScore</p>
+<p>- JoinTeamAutoBalance</p>
+<p>- LeaveTeam</p>
+<p>- OwnScore</p>
+<p>- StartGame</p>
+<p>- ToggleReady</p>
+<p>- TryJoinTeam</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## AudioSource</h2>
+<p>- Pause</p>
+<p>- Play</p>
+<p>- PlayDelayed</p>
+<p>- PlayOneShot</p>
+<p>- Stop</p>
+<p>- UnPause</p>
+<p>- set_bypassEffects</p>
+<p>- set_bypassListenerEffects</p>
+<p>- set_bypassReverbZones</p>
+<p>- set_clip</p>
+<p>- set_dopplerLevel</p>
+<p>- set_enabled</p>
+<p>- set_ignoreListenerPause</p>
+<p>- set_ignoreListenerVolume</p>
+<p>- set_loop</p>
+<p>- set_maxDistance</p>
+<p>- set_minDistance</p>
+<p>- set_mute</p>
+<p>- set_panStereo</p>
+<p>- set_pitch</p>
+<p>- set_playOnAwake</p>
+<p>- set_priority</p>
+<p>- set_reverbZoneMix</p>
+<p>- set_spacialBlend</p>
+<p>- set_spatialize</p>
+<p>- set_spatializePostEffects</p>
+<p>- set_spread</p>
+<p>- set_time</p>
+<p>- set_timeSamples</p>
+<p>- set_volume</p>
+<p>&nbsp;</p>
+<h2>## GunController</h2>
+<p>- GrantMagazineAmmo</p>
+<p>- GrantReserveAmmo</p>
+<p>- Reload</p>
+<p>- Shoot</p>
+<p>- ShootDown</p>
+<p>- ShootUp</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRVideoPlayer</h2>
+<p>- Next</p>
+<p>- Pause</p>
+<p>- Play</p>
+<p>- Previous</p>
+<p>- SetAudioMode</p>
+<p>- SetNetworkSync</p>
+<p>- SetUrl</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRAvatarPickup</h2>
+<p>- ChangeAvatar</p>
+<p>- ShowAvatarDetailsPage</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRSpawnablePickup</h2>
+<p>- SelectSpawnableForSpawn</p>
+<p>- ShowSpawnableDetailsPage</p>
+<p>- set_enabled</p>
+<p>&nbsp;</p>
+<h2>## CVRAudioMaterialParser</h2>
+<p>&nbsp;</p>
+<h2>## CVRCustomRenderTextureUpdater</h2>
+<p>&nbsp;</p>
+<h2>## CVRGlobalShaderUpdater</h2>
+<p>&nbsp;</p>
+<h2>## CVRWorld</h2>
+<p>- ApplyMovementSettings</p>
+<p>- SetAirFriction</p>
+<p>- SetBaseMovementSpeed</p>
+<p>- SetCrouchMultiplier</p>
+<p>- SetFlyMultiplier</p>
+<p>- SetGravity</p>
+<p>- SetInAirMovementMultiplier</p>
+<p>- SetJumpHeight</p>
+<p>- SetObjectGravity</p>
+<p>- SetPlayerGravityAlignmentMode</p>
+<p>- SetPlayerGravityCustomAlignmentValue</p>
+<p>- SetProneMultiplier</p>
+<p>- SetSprintMultiplier</p>
+<p>- SetStrafeMultiplier</p>
+<p>&nbsp;</p>
+<h2>## PortableCamera &nbsp;</h2>
+<p>&nbsp;</p>

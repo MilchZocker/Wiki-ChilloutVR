@@ -1,0 +1,35 @@
+<!--
+title: Magica Cloth
+description: 
+published: true
+date: 2024-04-14T17:27:29.464Z
+tags: avatar, cck, content creation
+editor: ckeditor
+dateCreated: 2023-04-22T11:37:05.894Z
+-->
+
+<h1>Magica Cloth V1 in CVR</h1>
+<p>In this blog post, I will explain how to use Magica Cloth on avatars in ChilloutVR. Magica Cloth is a Unity asset that allows you to create realistic cloth simulations for your characters, such as skirts, hair, capes, etc.</p>
+<h2>Dependencies</h2>
+<p>You will need Unity 2021.3.23f1, latest CCK, Burst, Collections, Mathematics and the Magica Cloth V1 packages to follow this tutorial.</p>
+<p>&nbsp;</p>
+<h2>Pre Setup</h2>
+<p>First, you need to import your avatar model into Unity and set up the basic components such as Animator, Avatar Descriptor and Avatar Settings. Then, you need to import the Magica Cloth package from the Asset Store and make sure you have the <a href="/abi.mods.zip">Magica Cloth Support package</a> from the CCK Module Workshop installed.</p>
+<p>&nbsp;</p>
+<h2>Setup</h2>
+<p>Next, you need to add the Magica Cloth component to your avatar. This component will let you define the cloth settings such as gravity, wind, stiffness, damping, etc. You can also adjust the quality and performance of the simulation by changing the update rate and solver iteration parameters.</p>
+<h2><br>Magica Mesh Cloth</h2>
+<p>When using Magica Mesh Cloth, you need to add the Magica Virtual Deformer and Magica Render Deformer component to your avatar's mesh object. This component will create a virtual mesh that will be used for the cloth simulation.</p>
+<p><br>Now you can add the Magica Mesh Cloth component, you can select from a list of preset to get a general configuration that you can tweak further more.</p>
+<p>&nbsp;</p>
+<p>Next, you can add Magica Collider component's to your avatar. This component will let you define colliders that will interact with the cloth simulation.</p>
+<h2><br>Magica Bone Cloth<br>&nbsp;</h2>
+<p>Next, you can add Magica Collider component's to your avatar. This component will let you define colliders that will interact with the cloth simulation.</p>
+<p>&nbsp;</p>
+<p>You can add the Magica Bone Cloth component to your avatar's responding bones. This component will let you define the cloth parts that will be simulated by Magica Bone Cloth. Now you can select the Bones that should get influenced by Bone Cloth, and use the Auto Select button under Culling to Pause Simulation when not rendered. Then you can select from a list of preset to get a general configuration that you can tweak further more.</p>
+<p>Next, you can add Magica Collider component's to your avatar. This component will let you define colliders that will interact with the cloth simulation.</p>
+<p>&nbsp;</p>
+<h2>Finishing</h2>
+<p>That's it! You have successfully added Magica Cloth simulation to your avatar in chilloutvr. You can test your avatar in-game by uploading it using CCK 3.5 and selecting it in the Avatars Tab. You should see your cloth parts moving realistically with physics.</p>
+<p>&nbsp;</p>
+<p>I hope this blog post was helpful for you. If you have any questions or feedback, please leave a comment below. Thank you for reading!</p>
