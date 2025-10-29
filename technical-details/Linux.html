@@ -1,0 +1,45 @@
+<!--
+title: Linux
+description: 
+published: true
+date: 2025-10-29T14:21:42.910Z
+tags: 
+editor: ckeditor
+dateCreated: 2025-10-29T14:21:42.910Z
+-->
+
+<h1>Linux Guides</h1>
+<p>&nbsp;</p>
+<h2>General</h2>
+<blockquote>
+  <p>It is <a href="https://www.protondb.com/app/661130">generally advised</a> to use Proton GE for ChilloutVR.</p>
+</blockquote>
+<p>&nbsp;</p>
+<h2>Issues&amp;Notices</h2>
+<blockquote>
+  <p>ChilloutVR is a Platform driven by user generated Content, with that comes the typical issues like on the fly Shader Recompilation.<br>&nbsp;<br>ChilloutVR is a Mono game that makes use of Burst/Jobs/Collections aka DOTS (mostly for 3rd party implementations), this drastically improves performance but Native Machine Code is simply more painfull to translate and Proton/Wine can fail, this is usally indicated by Memory Leaks and Crashes Related to Memory Exeptions and Out of Bounds.</p>
+</blockquote>
+<p>&nbsp;</p>
+<h2>VR</h2>
+<p><span class="text-big"><strong>It is advised to refrain from using SteamVR or OpenVR directly, the advised setup is Monado/WiVRn with OpenComposit.</strong></span></p>
+<blockquote>
+  <p><span class="text-big"><strong>WiVRn setup:</strong></span></p>
+  <ul>
+    <li>You should first try the <a href="https://wivrn.github.io/">Offical WiVRn Setup.</a></li>
+  </ul>
+</blockquote>
+<p><br><span class="text-big"><strong>If for any reason this is not applicable with your setup, follow the next steps.</strong></span></p>
+<p>&nbsp;</p>
+<blockquote>
+  <p><span class="text-big"><strong>WiVRn through Envision setup:</strong></span></p>
+  <ul>
+    <li>Get Envision through the package Manager of your choice.<br>&nbsp;</li>
+    <li>now you see Envision profiles in a dropdown at the bottom, you can select WiVRn from there.<br>&nbsp;</li>
+    <li>hit the&nbsp;Build Profile Button.<br>&nbsp;</li>
+    <li>if everything goes smooth, you should now be able to Launch wivrn from the Envision UI, enter the paircode in your headset and connected.<br><br><br><span class="text-big"><strong>If everything dosnt go smooth:</strong></span></li>
+    <li>copy the WiVRn profile in Envision.<br>&nbsp;</li>
+    <li>edit the duplicated profile.<br>&nbsp;</li>
+    <li>You need compile this fork: <code>https://github.com/notpeelz/WiVRn.git</code>, branch <code>solarxr-patches</code>. You can easily build WiVRn from this specific branch via Envision, by modifying “XR Service Repo” and “XR Service Branch” in your build profile accordingly.<br>&nbsp;</li>
+    <li>hit the Build Profile again. (if you encounter a build issue with “Eigen3” use your package manager of choice to install it then rerun the build process)</li>
+  </ul>
+</blockquote>
