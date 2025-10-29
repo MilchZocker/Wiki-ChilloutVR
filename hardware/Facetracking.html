@@ -2,7 +2,7 @@
 title: Facetracking
 description: Official and Unofficial Facetracking capabilities 
 published: true
-date: 2025-06-21T18:20:16.482Z
+date: 2025-10-29T13:45:32.815Z
 tags: hardware facetracking
 editor: ckeditor
 dateCreated: 2024-04-19T07:26:15.668Z
@@ -15,12 +15,25 @@ dateCreated: 2024-04-19T07:26:15.668Z
   <p>Tobii Eyetracking can be enabled in settings&gt;Implementations&gt;Enable Eye tracking</p>
 </blockquote>
 <p>&nbsp;</p>
-<h2>SRanipal (Vive) [Official]</h2>
+<h2><a href="https://github.com/benaclejames/VRCFaceTracking"><strong>VRCFaceTracking</strong></a><strong> (</strong>Nativ) [Official/New]</h2>
+<blockquote>
+  <p>VRCFT is an Application that communicates via OSC with CVR<br>Any kind of Eye/Facetracking supported by VRCFacetracking can be used in ChilloutVR.</p>
+  <p>settings&gt;Implementations&gt;Facetracking&gt;OSC</p>
+  <p>settings&gt;Implementations&gt;Eyetracking&gt;OSC</p>
+  <p>&nbsp;</p>
+  <p>Requirements:</p>
+  <p>VRCFT from GitHub or Steam.</p>
+  <p>VRCFT Module for your Hardware.</p>
+  <p>(can change in the future)Launch option for ChilloutVR “--osc-query-prefix=VRChat-Client”</p>
+  <p><a href="https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/parameters">VRCFacetracking compatible Avatar</a> (either via animator or CVR Face tracking component)</p>
+</blockquote>
+<p>&nbsp;</p>
+<h2>SRanipal (Vive) [Official/Legacy]</h2>
 <blockquote>
   <p>Vive Facetracking with SRanipal can be enabled in settings&gt;Implementations&gt;Enable Vive Facetracking, SRanipal has its own standard of Visemes/Blend shapes to use.&nbsp;</p>
 </blockquote>
 <p>&nbsp;</p>
-<h2><a href="https://github.com/benaclejames/VRCFaceTracking"><strong>VRCFaceTracking</strong></a> [Unofficial]</h2>
+<h2><a href="https://github.com/benaclejames/VRCFaceTracking"><strong>VRCFaceTracking</strong></a> [Unofficial/Deprecated]</h2>
 <blockquote>
   <p>VRCFT is an Application that communicates via OSC with CVR<br>Any kind of Eye/Facetracking supported by VRCFacetracking can be used in ChilloutVR.<br><br>Requirements:<br><a href="https://github.com/benaclejames/VRCFaceTracking/releases/tag/5.1.1.0">VRCFacetracking version 5.1.1.0!</a></p>
   <p>VRCFaceTracking 5.1.1.0 compatible module/s for the used Hardware/Software</p>
@@ -41,13 +54,19 @@ dateCreated: 2024-04-19T07:26:15.668Z
   <p><a href="https://github.com/kafeijao/Kafe_CVR_Mods">Kafe's OSC Mod</a></p>
   <p><a href="https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/parameters">VRCFacetracking compatible Avatar</a></p>
 </blockquote>
+<h2><br><a href="https://www.meta.com/quest/quest-pro/"><strong>Quest Pro</strong></a> (Meta Link/SteamLink/ALVR/VirtualDesktop)</h2>
+<blockquote>
+  <p>Quest Pro Eye/Mouth tracking via the typical Stream Applications<br><br><br>Requirements:<br>Enable both Eye Tracking and Lip Tracking on Quest Settings.<br><br><a href="https://github.com/TigersUniverse/VRCFaceTracking">VRCFT2CVR</a> / VRCFT application</p>
+  <p><a href="https://docs.hypernex.dev/docs/nexadamy/extra/facetracking#modules">VRCFT2CVRmodule</a> (for your hardware) / or VRCFT application module</p>
+  <p><a href="https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/parameters">VRCFacetracking compatible Avatar</a></p>
+</blockquote>
 <h2><br><a href="https://www.picoxr.com/products/pico4e"><strong>Pico</strong>&nbsp;<strong> 4 Pro/Enterprise</strong></a> (Streamer/Business Streamer)</h2>
 <blockquote>
-  <p>Pico 4 Pro/Enterprise Eye/Mouth tracking via offical Streamer&nbsp;<br><br><br>Requirements:<br>Enable both Eye Tracking and Lip Tracking on Pico Settings, those can be found under LAB tab<br><br><a href="https://github.com/TigersUniverse/VRCFaceTracking">VRCFT2CVR</a></p>
-  <p><a href="https://github.com/Slime-Senpai/VRCFT2CVRPicoModule">VRCFT2CVRPicoModule</a></p>
+  <p>Pico 4 Pro/Enterprise Eye/Mouth tracking via offical Streamer&nbsp;<br><br><br>Requirements:<br>Enable both Eye Tracking and Lip Tracking on Pico Settings, those can be found under LAB tab<br><br><a href="https://github.com/TigersUniverse/VRCFaceTracking">VRCFT2CVR&nbsp;</a> / VRCFT application</p>
+  <p><a href="https://github.com/Slime-Senpai/VRCFTPicoModule">VRCFT2CVRPicoModule&nbsp;</a> / or VRCFT application module</p>
   <p><a href="https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/parameters">VRCFacetracking compatible Avatar</a><br>&nbsp;</p>
   <p>(Pico 4 Enterprise requires renaming ""…\BusinessStreaming\BusinessStreamingUW\driver\bin\win64\pico_et_ft_bt_bridge.exe" to “.pico_et_ft_bt_bridge.exe” to not interfere with module.)</p>
-  <p>(Pico 4 Pro requires change its facetracking to legacy protocol, find the file at “C:\Users\{YourUsername}\AppData\Roaming\PICO Connect\setting.json” and change faceTrackingTransferProtocol to 2)</p>
+  <p>(Pico 4 Pro requires changing its facetracking to legacy protocol, find the file at “C:\Users\{YourUsername}\AppData\Roaming\PICO Connect\setting.json” and change faceTrackingTransferProtocol to 2)</p>
 </blockquote>
 <h2><br><a href="https://h20195.www2.hp.com/v2/GetDocument.aspx?docname=c06699581"><strong>HP Reverb G2 Omnicept Edition</strong></a> (WMR Omnicept Runtime)</h2>
 <blockquote>
@@ -58,8 +77,8 @@ dateCreated: 2024-04-19T07:26:15.668Z
   <p><a href="/glialipviewer.zip">Glia LibViewer</a> (Application will display the Raw Facecamera image)</p>
   <p><a href="https://obsproject.com/">OBS</a> (Capture the Glia LibViewer Application then Start the Virtual Camera)</p>
   <p><a href="https://github.com/Project-Babble"><strong>ProjectBabble</strong></a></p>
-  <p><a href="https://github.com/TigersUniverse/VRCFTOmniceptModule">VRCFT2CVROmniceptModule</a> (Omnicept Module is Only For Eyetracking! using this module you will get seperate Eye Blink, Gaze, PupilSize)</p>
-  <p><a href="https://github.com/Slime-Senpai/VRCFT-Babble">VRCFT2CVRProjectBabbleModule</a> (to recive the result from ProjectBabble)</p>
+  <p><a href="https://github.com/TigersUniverse/VRCFTOmniceptModule">VRCFT2CVROmniceptModule</a> / or VRCFT application module (Omnicept Module is Only For Eyetracking! using this module you will get seperate Eye Blink, Gaze, PupilSize)</p>
+  <p><a href="https://github.com/Slime-Senpai/VRCFT-Babble">VRCFT2CVRProjectBabbleModule</a> / or VRCFT application module (to recive the result from ProjectBabble)</p>
   <p><a href="https://github.com/200Tigersbloxed/HRtoVRChat_OSC">HRtoVRC</a> (to send Heart Rate via OSC to <a href="https://github.com/kafeijao/Kafe_CVR_Mods">Kafe's OSC Mod</a>)</p>
   <p><a href="https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/parameters">VRCFacetracking compatible Avatar</a></p>
 </blockquote>
