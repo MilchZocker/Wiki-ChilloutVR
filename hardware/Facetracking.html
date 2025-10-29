@@ -2,7 +2,7 @@
 title: Facetracking
 description: Official and Unofficial Facetracking capabilities 
 published: true
-date: 2025-10-29T13:45:32.815Z
+date: 2025-10-29T18:25:52.132Z
 tags: hardware facetracking
 editor: ckeditor
 dateCreated: 2024-04-19T07:26:15.668Z
@@ -81,5 +81,15 @@ dateCreated: 2024-04-19T07:26:15.668Z
   <p><a href="https://github.com/Slime-Senpai/VRCFT-Babble">VRCFT2CVRProjectBabbleModule</a> / or VRCFT application module (to recive the result from ProjectBabble)</p>
   <p><a href="https://github.com/200Tigersbloxed/HRtoVRChat_OSC">HRtoVRC</a> (to send Heart Rate via OSC to <a href="https://github.com/kafeijao/Kafe_CVR_Mods">Kafe's OSC Mod</a>)</p>
   <p><a href="https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/parameters">VRCFacetracking compatible Avatar</a></p>
+</blockquote>
+<p>&nbsp;</p>
+<h2>WiVRn (Quest Pico4Pro/Enterprise)</h2>
+<blockquote>
+  <p>WiVRn can capture Face/Eye data, when launching WiVRn you get a promt to allow acces to this data.<br>On the PC side this data is recived as an OpenXR Layer/Extension (XrFaceTracker2FB).<br><br>To make use of the Face/Eye data we need to read the data from the OpenXR Layer and send it via OSC (most Platforms expect this data via OSC)<br>&nbsp;</p>
+  <p>follow the setup of <a href="https://github.com/galister/oscavmgr">oscavmgr</a> it will read and output Face/Eye Data via OSC.<br><br>now you can Launch ChilloutVR and set the following settings:</p>
+  <ul>
+    <li>settings&gt;Implementations&gt;Facetracking&gt;OSC<br>settings&gt;Implementations&gt;Eyetracking&gt;OSC</li>
+  </ul>
+  <p>now you can load an Avatar with the CVR Face tracking component.</p>
 </blockquote>
 <p><br>&nbsp;</p>
